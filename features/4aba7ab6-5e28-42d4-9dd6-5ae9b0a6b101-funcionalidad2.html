@@ -623,20 +623,27 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
+                        <i class="fa fa-tags fa-lg"></i>
+                        
+                            <span class="tag">@RegressionTest</span>
+                        
+                            <span class="tag">@Test</span>
+                        
+                    
                 
             </div>
             <h1>Feature:
-                <small>Login page</small>
+                <small>Funcionalidad2</small>
             </h1>
             
                 <p>
-                    <strong>Description: </strong>     Feature Login page will work depending on the user credentials. </p>
+                    <strong>Description: </strong>     Como analista de teste quero acessar a pagina do publicazo e realizar uma pesquisa de Teste. </p>
                 
                <p><strong>File name:</strong>
-                    login.feature
+                    Test_Case_02.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    login.feature</p>
+                    Test_Case_02.feature</p>
             
         </div>
 
@@ -674,7 +681,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -685,7 +692,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -697,16 +704,6 @@ input#darkCheck:checked ~ label>svg#moon {
                         <td class="percentage">0.00 %</td>
                     
                     
-                    <tr>
-                        <td>
-                            <p data-toggle="tooltip" data-placement="left" title="Scenario has no step implmentation.">
-                                <i class="fa fa-question-circle not-defined-color"></i>
-                                Not defined
-                            </p>
-                        </td>
-                        <td class="percentage">100.00 %</td>
-                    </tr>
-                    
                     </tr>
                     
                     
@@ -716,7 +713,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:02.862</td></tr>
+                <tr><td>00:00:08.082</td></tr>
             </tr>
         
     </table>
@@ -837,10 +834,17 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
+                            <i class="fa fa-tags fa-lg"></i>
+                            
+                                <span class="tag">@RegressionTest</span>
+                            
+                                <span class="tag">@Test</span>
+                            
+                        
                     
                 </div>
 
-                <h2>Scenario: <small>Success Login</small></h2>
+                <h2>Scenario: <small>002_Check</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -857,20 +861,16 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
-                    
-                        <li>
-                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
-                        </li>
                     
 
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:01.783</span>
+                            <span style=padding-right:5em>00:00:04.886</span>
                         </li>
                     
                 </ul>
@@ -896,13 +896,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        A web browser is at the saucelabs login page
+                                        un aceso
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.518</span>
+                                            <span class="duration">00:00:03.876</span>
                                         
                                     
 
@@ -960,13 +960,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        A user enters the username "standard_user", the password "secret_sauce", and clicks on the login button
+                                        item2 "Teste"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.839</span>
+                                            <span class="duration">00:00:01.005</span>
                                         
                                     
 
@@ -1014,8 +1014,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
-                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1024,33 +1024,19 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the url will contains the inventory subdirectory
+                                        verifica item2 existe
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.426</span>
+                                            <span class="duration">00:00:00.005</span>
                                         
                                     
 
                                 </div>
 
                                 
-                                    
-                                        <pre class="info">
-// With Callbacks
-Then (/^the url will contains the inventory subdirectory$/, (callback) => {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
-});
-
-// With Promises
-Then (/^the url will contains the inventory subdirectory$/, () => {
-    // Write code here that turns the phrase above into concrete actions
-    return Promise.resolve('pending');
-});
-                                        </pre>
                                     
 
                                     
@@ -1099,10 +1085,17 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
                     
                         
                         
+                            <i class="fa fa-tags fa-lg"></i>
+                            
+                                <span class="tag">@RegressionTest</span>
+                            
+                                <span class="tag">@Test</span>
+                            
+                        
                     
                 </div>
 
-                <h2>Scenario: <small>Blocked Login</small></h2>
+                <h2>Scenario: <small>002_Check</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1119,20 +1112,16 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
-                    
-                        <li>
-                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
-                        </li>
                     
 
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:01.079</span>
+                            <span style=padding-right:5em>00:00:01.554</span>
                         </li>
                     
                 </ul>
@@ -1158,13 +1147,13 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        A web browser is at the saucelabs login page
+                                        un aceso
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.317</span>
+                                            <span class="duration">00:00:00.697</span>
                                         
                                     
 
@@ -1222,13 +1211,13 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        A user enters the username "locked_out_user", the password "secret_sauce", and clicks on the login button
+                                        item2 "Enfermeira"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.762</span>
+                                            <span class="duration">00:00:00.855</span>
                                         
                                     
 
@@ -1276,8 +1265,8 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
-                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1286,13 +1275,13 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        The error message "Epic sadface: Sorry, this user has been locked out." is displayed
+                                        verifica item2 existe
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.002</span>
                                         
                                     
 
@@ -1300,19 +1289,256 @@ Then (/^the url will contains the inventory subdirectory$/, () => {
 
                                 
                                     
-                                        <pre class="info">
-// With Callbacks
-Then (/^The error message "([^"]*)" is displayed$/, (arg1, callback) => {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
-});
 
-// With Promises
-Then (/^The error message "([^"]*)" is displayed$/, (arg1, ) => {
-    // Write code here that turns the phrase above into concrete actions
-    return Promise.resolve('pending');
-});
-                                        </pre>
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                            <i class="fa fa-tags fa-lg"></i>
+                            
+                                <span class="tag">@RegressionTest</span>
+                            
+                                <span class="tag">@Test</span>
+                            
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>002_Check</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:01.642</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        un aceso
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.777</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        item2 "Cabeleleira"
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.863</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        verifica item2 existe
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.002</span>
+                                        
+                                    
+
+                                </div>
+
+                                
                                     
 
                                     
@@ -1399,12 +1625,12 @@ Then (/^The error message "([^"]*)" is displayed$/, (arg1, ) => {
                     ],
                     datasets: [{
                         data: [
+                            3,
                             0,
                             0,
                             0,
                             0,
-                            0,
-                            2
+                            0
                         ],
                         backgroundColor: getChartColors()
                     }]
