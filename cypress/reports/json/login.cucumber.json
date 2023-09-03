@@ -23,7 +23,7 @@
             "name": "A web browser is at the saucelabs login page",
             "result": {
               "status": "passed",
-              "duration": 783000000
+              "duration": 600000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
             "result": {
               "status": "passed",
-              "duration": 801000000
+              "duration": 804000000
             }
           },
           {
@@ -42,8 +42,8 @@
             "line": 9,
             "name": "the url will contains the inventory subdirectory",
             "result": {
-              "status": "undefined",
-              "duration": 324000000
+              "status": "passed",
+              "duration": 14000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "A web browser is at the saucelabs login page",
             "result": {
               "status": "passed",
-              "duration": 364000000
+              "duration": 304000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "A user enters the username \"locked_out_user\", the password \"secret_sauce\", and clicks on the login button",
             "result": {
               "status": "passed",
-              "duration": 791000000
+              "duration": 758000000
             }
           },
           {
@@ -82,7 +82,8 @@
             "line": 12,
             "name": "The error message \"Epic sadface: Sorry, this user has been locked out.\" is displayed",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 16000000
             }
           }
         ]

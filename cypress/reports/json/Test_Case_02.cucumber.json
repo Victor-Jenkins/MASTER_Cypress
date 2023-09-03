@@ -37,7 +37,7 @@
             "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 5371000000
+              "duration": 5767000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "item2 \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1361000000
+              "duration": 1125000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 6000000
             }
           }
         ]
@@ -86,7 +86,7 @@
             "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 971000000
+              "duration": 896000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "item2 \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1075000000
+              "duration": 1170000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           }
         ]
@@ -135,7 +135,7 @@
             "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 959000000
+              "duration": 886000000
             }
           },
           {
@@ -145,7 +145,7 @@
             "name": "item2 \"Cabeleleira\"",
             "result": {
               "status": "passed",
-              "duration": 1148000000
+              "duration": 1079000000
             }
           },
           {
@@ -155,7 +155,7 @@
             "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3000000
             }
           }
         ]

@@ -33,4 +33,9 @@ When("A user provides incorrect credentials, and clicks on the login button", (t
   elements1.loginBtn().click();
 });
 })
-
+Then("the url will contains the inventory subdirectory", () => {
+  cy.url().should("contains", "/inventory.html");
+});
+Then("The error message {string} is displayed", (errorMessage) => {
+  elements1.errorMessage().should("have.text", errorMessage);
+});
