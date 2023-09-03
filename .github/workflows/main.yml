@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - nombre-de-tu-rama  # Reemplaza "nombre-de-tu-rama" con el nombre de tu rama específica
+      - main
 
 jobs:
   cypress-run:
@@ -16,11 +16,11 @@ jobs:
 
       # Ejecuta las pruebas Cypress y genera el informe
       - name: Cypress Run
-        run: npm run cypress:ci  # Asegúrate de que este comando ejecute Cypress en modo CI y genere los informes
+        run: npx cypress run
 
       # Genera el informe de Cucumber HTML
       - name: Generate Cucumber HTML Report
-        run: npm run generate-cucumber-report
+        run: node cucumber-html-report.js
 
       # Configura el entorno para la acción gh-pages
       - name: Set up Node
