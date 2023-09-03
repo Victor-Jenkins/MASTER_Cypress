@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
@@ -55,10 +56,8 @@ jobs:
         with:
           github_token: ${{ secrets.CUCUMBER }}
 
-      # Genera un informe de ejecución detallado para GitHub Actions
+      # Utiliza la acción mshick/github-actions-report para generar un informe de ejecución
       - name: Generate GitHub Actions Run Report
-        uses: softprops/action-gh-runreport@v1
-        with:
-          github_token: ${{ secrets.CUCUMBER }}
+        uses: mshick/github-actions-report@v2
 
 
