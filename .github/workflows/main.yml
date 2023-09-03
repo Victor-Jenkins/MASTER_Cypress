@@ -37,22 +37,29 @@ jobs:
           name: cypress-screenshots
           path: cypress/screenshots
 
-      # Configura el entorno para la acción gh-pages
+      # Crear un artifact con el informe Cucumber-HTML
+      - name: Create Cucumber HTML Report Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cucumber-html-report
+          path: /home/runner/work/MASTER_Cypress/MASTER_Cypress/cypress/reports/chrome
+
+      # Configura el entorno para la acción peaceiris/actions-gh-pages
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
           node-version: 14  # Puedes ajustar la versión de Node según tus requisitos
 
-      # Publica el informe en la rama gh-pages utilizando la acción específica
-      - name: Deploy to GitHub Pages
-        run: |
-          # Ejemplo: Utiliza la acción peaceiris/actions-gh-pages
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git checkout -b gh-pages
-          git add .
-          git commit -m "Deploy Cucumber report"
-          git push -f origin gh-pages
-        env:
-          GH_PAGES_TOKEN: ${{ secrets.CUCUMBER }}
+      # Deploy automáticamente el informe a GitHub Pages usando peaceiris/actions-gh-pages
+      - name: Deploy Cucumber Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.CUCUMBER }}
+
+      # Genera un informe de ejecución detallado para GitHub Actions
+      - name: Generate GitHub Actions Run Report
+        uses: softprops/action-gh-runreport@v1
+        with:
+          github_token: ${{ secrets.CUCUMBER }}
+
 
