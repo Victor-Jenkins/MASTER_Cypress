@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - nombre-de-tu-rama  # Reemplaza "nombre-de-tu-rama" con el nombre de tu rama específica
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Instala las dependencias de NPM
+      - name: Install Dependencies
+        run: npm install
+
+      # Ejecuta las pruebas Cypress y genera el informe
+      - name: Cypress Run
+        run: npm run cypress:ci  # Asegúrate de que este comando ejecute Cypress en modo CI y genere los informes
+
+      # Genera el informe de Cucumber HTML
+      - name: Generate Cucumber HTML Report
+        run: npm run generate-cucumber-report
+
+      # Configura el entorno para la acción gh-pages
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Puedes ajustar la versión de Node según tus requisitos
+
+      # Publica el informe en la rama gh-pages utilizando la acción específica
+      - name: Deploy to GitHub Pages
+        if: success()  # Solo despliega si las pruebas fueron exitosas
+        run: |
+          # Ejemplo: Utiliza la acción peaceiris/actions-gh-pages
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Deploy Cucumber report"
+          git push -f origin gh-pages
