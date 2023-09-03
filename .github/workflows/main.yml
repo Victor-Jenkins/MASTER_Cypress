@@ -1,3 +1,5 @@
+name: Cypress Test and Report
+
 on:
   push:
     branches:
@@ -23,41 +25,16 @@ jobs:
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
 
-      # Crear un artifact con el informe Cucumber-HTML
-      - name: Create Cucumber HTML Report Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: cucumber-html-report
-          path: /home/runner/work/MASTER_Cypress/MASTER_Cypress/cypress/reports/chrome
-
       # Configura el entorno para la acción peaceiris/actions-gh-pages
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
           node-version: 14  # Puedes ajustar la versión de Node según tus requisitos
 
-      # Descomprimir el artifact en la carpeta de GitHub Pages
-      - name: Extract Artifact to GitHub Pages
-        run: |
-          mkdir -p gh-pages
-          tar xvzf /home/runner/work/MASTER_Cypress/MASTER_Cypress/cypress/reports/chrome/cucumber-html-report.tar.gz -C gh-pages
-        working-directory: ${{ github.workspace }}
-
-      # Deploy automáticamente la carpeta de GitHub Pages usando peaceiris/actions-gh-pages
+      # Desplegar automáticamente la carpeta del informe Cucumber HTML en GitHub Pages
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.CUCUMBER }}
-          publish_dir: ./gh-pages
-
-      # Abrir el informe en Firefox
-      - name: Open Report in Firefox
-        run: |
-          firefox ./gh-pages/index.html
-        working-directory: ${{ github.workspace }}
-
-      # Comentario con el enlace a GitHub Pages
-      - name: Comment with GitHub Pages URL
-        run: |
-          echo "GitHub Pages URL: https://github.com/${{ github.repository }}/tree/gh-pages"
+          publish_dir: ./cypress/reports/chrome
 
