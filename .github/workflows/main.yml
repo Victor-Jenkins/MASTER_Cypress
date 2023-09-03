@@ -55,9 +55,3 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.CUCUMBER }}
-
-      # Utiliza la acción mshick/github-actions-report para generar un informe de ejecución
-      - name: Generate GitHub Actions Run Report
-        uses: mshick/github-actions-report@v2
-
-
