@@ -37,7 +37,7 @@
             "name": "um acesso no site publicazo",
             "result": {
               "status": "passed",
-              "duration": 5798000000
+              "duration": 3547000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "insiro o item \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1119000000
+              "duration": 1170000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "um acesso no site publicazo",
             "result": {
               "status": "passed",
-              "duration": 875000000
+              "duration": 772000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "insiro o item \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1071000000
+              "duration": 920000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "verifica se item existe",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           }
         ]
@@ -135,7 +135,7 @@
             "name": "um acesso no site publicazo",
             "result": {
               "status": "passed",
-              "duration": 943000000
+              "duration": 742000000
             }
           },
           {
@@ -145,7 +145,7 @@
             "name": "insiro o item \"Cabeleleira\"",
             "result": {
               "status": "passed",
-              "duration": 1113000000
+              "duration": 982000000
             }
           },
           {
