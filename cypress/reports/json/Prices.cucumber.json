@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Kuorum Clients",
+    "line": 1,
+    "id": "kuorum-clients",
+    "tags": [],
+    "uri": "Prices.feature",
+    "elements": [
+      {
+        "id": "kuorum-clients;type-personal-data-like-a-client",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Type personal data like a client",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the Kuorum website",
+            "result": {
+              "status": "passed",
+              "duration": 1213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "As user clicks on different dropdowns",
+            "result": {
+              "status": "passed",
+              "duration": 892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I type personal data like a client",
+            "result": {
+              "status": "passed",
+              "duration": 2163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can type all personal data in client area",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

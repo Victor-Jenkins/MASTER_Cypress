@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Visit and put a fail email",
+    "line": 1,
+    "id": "visit-and-put-a-fail-email",
+    "tags": [],
+    "uri": "Kuorum.feature",
+    "elements": [
+      {
+        "id": "visit-and-put-a-fail-email;success-search",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Success search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "A web browser is at the Kuorum page",
+            "result": {
+              "status": "passed",
+              "duration": 2200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "A user accept cookies",
+            "result": {
+              "status": "passed",
+              "duration": 778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the url will contains the subdirectory",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Click on List",
+            "result": {
+              "status": "passed",
+              "duration": 2164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I want explore navigation",
+            "result": {
+              "status": "passed",
+              "duration": 347000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Start a reservation",
+            "result": {
+              "status": "passed",
+              "duration": 1764000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "A user enters the personal data with an incorrect email",
+            "result": {
+              "status": "passed",
+              "duration": 2847000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
