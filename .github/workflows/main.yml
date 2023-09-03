@@ -30,7 +30,6 @@ jobs:
 
       # Publica el informe en la rama gh-pages utilizando la acción específica
       - name: Deploy to GitHub Pages
-        if: success()  # Solo despliega si las pruebas fueron exitosas
         run: |
           # Ejemplo: Utiliza la acción peaceiris/actions-gh-pages
           git config user.name "GitHub Actions"
