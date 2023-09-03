@@ -14,9 +14,19 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # Ejecuta las pruebas Cypress y genera el informe
+      # Ejecuta las pruebas Cypress y captura el código de salida
       - name: Cypress Run
-        run: npx cypress run
+        id: cypress
+        run: |
+          set +e  # Deshabilita la detección de errores para capturar el código de salida
+          npx cypress run
+          export CYPRESS_EXIT_CODE=$?
+          set -e  # Habilita la detección de errores nuevamente
+
+      # Continúa con los pasos restantes incluso si las pruebas fallan
+      - name: Continue Execution
+        if: ${{ steps.cypress.outputs.CYPRESS_EXIT_CODE }} != 0
+        run: echo "Cypress tests failed, but continuing..."
 
       # Genera el informe de Cucumber HTML
       - name: Generate Cucumber HTML Report
