@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Kuorum Clients",
+    "name": "Contract Mortgage Clikalia",
     "line": 1,
-    "id": "kuorum-clients",
+    "id": "contract-mortgage-clikalia",
     "tags": [],
-    "uri": "Prices.feature",
+    "uri": "hipoteca.feature",
     "elements": [
       {
-        "id": "kuorum-clients;type-personal-data-like-a-client",
+        "id": "contract-mortgage-clikalia;select-mortgage,-price,-years-and-interest,-fill-in-personal-data",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Type personal data like a client",
+        "name": "Select Mortgage, price, years and interest, fill in personal data",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -19,40 +19,40 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I am on the Kuorum website",
+            "name": "I am on the Clikalia website",
             "result": {
               "status": "passed",
-              "duration": 1228000000
+              "duration": 1416000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "As user clicks on different dropdowns",
+            "name": "As user clicks on Hipoteca",
             "result": {
               "status": "passed",
-              "duration": 851000000
+              "duration": 3188000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I type personal data like a client",
+            "name": "I select calcula tu hipoteca",
             "result": {
               "status": "passed",
-              "duration": 2193000000
+              "duration": 4693000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I can type all personal data in client area",
+            "name": "I proceed to get information",
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 3057000000
             }
           }
         ]

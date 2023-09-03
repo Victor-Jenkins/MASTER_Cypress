@@ -37,7 +37,7 @@
             "name": "um acesso no site publicazo2",
             "result": {
               "status": "passed",
-              "duration": 5665000000
+              "duration": 5721000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "insiro o item2 \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1198000000
+              "duration": 1142000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "verifica se item2 existe",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           }
         ]
@@ -86,7 +86,7 @@
             "name": "um acesso no site publicazo2",
             "result": {
               "status": "passed",
-              "duration": 877000000
+              "duration": 951000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "insiro o item2 \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1148000000
+              "duration": 1056000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "verifica se item2 existe",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           }
         ]
@@ -135,7 +135,7 @@
             "name": "um acesso no site publicazo2",
             "result": {
               "status": "passed",
-              "duration": 874000000
+              "duration": 912000000
             }
           },
           {
@@ -145,7 +145,7 @@
             "name": "insiro o item2 \"Cabeleleira\"",
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 1098000000
             }
           },
           {
@@ -155,7 +155,7 @@
             "name": "verifica se item2 existe",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           }
         ]

@@ -1,0 +1,97 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Visit and search flat on page https://clikalia.es/vender and search flat on Madrid",
+    "line": 1,
+    "id": "visit-and-search-flat-on-page-https://clikalia.es/vender-and-search-flat-on-madrid",
+    "tags": [],
+    "uri": "Clikalia.feature",
+    "elements": [
+      {
+        "id": "visit-and-search-flat-on-page-https://clikalia.es/vender-and-search-flat-on-madrid;success-search",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Success search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "A web browser is at the Clikalia page",
+            "result": {
+              "status": "passed",
+              "duration": 5009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "A user accept cookies",
+            "result": {
+              "status": "passed",
+              "duration": 209000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the url will contains the subdirectory",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Click on Buy Flat",
+            "result": {
+              "status": "passed",
+              "duration": 3440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I want buy on Madrid",
+            "result": {
+              "status": "passed",
+              "duration": 1102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Start a reservation",
+            "result": {
+              "status": "failed",
+              "duration": 4156000000,
+              "error_message": "AssertionError: 2023-09-03T20:12:06.181Z\nTimed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\nAssertionError: Timed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\n    at Object.reservation (cypress/support/steps/Clikalia.steps.js:13:26)\n    at Context.eval (cypress/support/steps/Clikalia.steps.js:44:11)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "A user enters the name and surnames",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
