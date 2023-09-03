@@ -23,18 +23,18 @@ report.generate({
     customData: {
         title: 'Run info',
         data: [
-            {label: 'Projeto :', value: 'Meu projeto em Cypress'},
-            {label: 'Versão :', value: 'Q4 22'},
+            {label: 'Projeto :', value: 'Mi proyecto en Cypress'},
+            {label: 'Version :', value: 'Q4 22'},
             {label: 'Ciclo :', value: '2023 Q1'},
             {label: 'AMbiente:', value: 'Demo QA'},            
-            {label: 'Momento do teste: ', value: startsDate},
+            {label: 'Momento do testeo: ', value: startsDate},
             {label: 'Tester :',   value: 'CEO'},
         ]
     },
     scenarioTimestamp: true,
     displayDuration: true,
-    pageTitle: 'Relatório de Teste',
-    reportName: 'Relatório de Testes Automatizados',
+    pageTitle: 'Report',
+    reportName: 'Informe de Tests Automatizados',
     openReportInBrowser: true
 
 });
