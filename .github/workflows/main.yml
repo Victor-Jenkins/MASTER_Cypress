@@ -48,3 +48,5 @@ jobs:
           git add .
           git commit -m "Deploy Cucumber report"
           git push -f origin gh-pages
+          env:
+          GH_PAGES_TOKEN: ${{ secrets.CUCUMBER }}
