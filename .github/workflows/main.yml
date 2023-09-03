@@ -38,3 +38,9 @@ jobs:
           github_token: ${{ secrets.CUCUMBER }}
           publish_dir: ./cypress/reports/chrome
 
+      # Crear un artifact con el informe Cucumber-HTML
+      - name: Create Cucumber HTML Report Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cucumber-html-report
+          path: ./cypress/reports/chrome
