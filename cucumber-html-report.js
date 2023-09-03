@@ -5,8 +5,8 @@ const dayjs = require("dayjs")
 const startsDate = dayjs().format("MMM DD, YYYY - hh:mm:ss a")
 
 report.generate({
-    jsonDir: "cypress/reports/",  // ** Pasta do relatorio de teste **//
-    reportPath: "cypress/reports/chrome/", // ** pasta do arquivo  .html  **//
+    jsonDir: "cypress/reports/",  
+    reportPath: "cypress/reports/chrome/", 
     metadata:
 
         {   browser: {
