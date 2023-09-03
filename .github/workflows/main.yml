@@ -17,20 +17,25 @@ jobs:
       # Ejecuta las pruebas Cypress y captura el código de salida
       - name: Cypress Run
         id: cypress
-        run: |
-          set +e  # Deshabilita la detección de errores para capturar el código de salida
-          npx cypress run
-          export CYPRESS_EXIT_CODE=$?
-          set -e  # Habilita la detección de errores nuevamente
-
-      # Continúa con los pasos restantes incluso si las pruebas fallan
-      - name: Continue Execution
-        if: ${{ steps.cypress.outputs.CYPRESS_EXIT_CODE }} != 0
-        run: echo "Cypress tests failed, but continuing..."
+        run: npx cypress run || true  # Ejecuta Cypress y continúa incluso si falla
 
       # Genera el informe de Cucumber HTML
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
+
+      # Sube los videos de Cypress a GitHub Actions
+      - name: Upload Cypress Videos
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-videos
+          path: cypress/videos
+
+      # Sube los screenshots de Cypress a GitHub Actions
+      - name: Upload Cypress Screenshots
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
 
       # Configura el entorno para la acción gh-pages
       - name: Set up Node
@@ -48,5 +53,6 @@ jobs:
           git add .
           git commit -m "Deploy Cucumber report"
           git push -f origin gh-pages
-          env:
+        env:
           GH_PAGES_TOKEN: ${{ secrets.CUCUMBER }}
+
