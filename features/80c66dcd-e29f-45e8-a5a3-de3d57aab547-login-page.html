@@ -626,15 +626,17 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>Kuorum Clients</small>
+                <small>Login page</small>
             </h1>
             
                 <p>
+                    <strong>Description: </strong>     Feature Login page will work depending on the user credentials. </p>
+                
                <p><strong>File name:</strong>
-                    Prices.feature
+                    login.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    Prices.feature</p>
+                    login.feature</p>
             
         </div>
 
@@ -672,7 +674,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">1</div>
+                <div class="total">2</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -683,7 +685,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -695,6 +697,16 @@ input#darkCheck:checked ~ label>svg#moon {
                         <td class="percentage">0.00 %</td>
                     
                     
+                    <tr>
+                        <td>
+                            <p data-toggle="tooltip" data-placement="left" title="Scenario has no step implmentation.">
+                                <i class="fa fa-question-circle not-defined-color"></i>
+                                Not defined
+                            </p>
+                        </td>
+                        <td class="percentage">100.00 %</td>
+                    </tr>
+                    
                     </tr>
                     
                     
@@ -704,7 +716,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:04.087</td></tr>
+                <tr><td>00:00:02.343</td></tr>
             </tr>
         
     </table>
@@ -828,7 +840,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Type personal data like a client</small></h2>
+                <h2>Scenario: <small>Success Login</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -845,16 +857,20 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">4</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
+                        </li>
                     
 
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:04.087</span>
+                            <span style=padding-right:5em>00:00:01.381</span>
                         </li>
                     
                 </ul>
@@ -880,13 +896,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        I am on the Kuorum website
+                                        A web browser is at the saucelabs login page
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:01.414</span>
+                                            <span class="duration">00:00:00.372</span>
                                         
                                     
 
@@ -944,77 +960,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        As user clicks on different dropdowns
+                                        A user enters the username "standard_user", the password "secret_sauce", and clicks on the login button
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.782</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        I type personal data like a client
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:01.845</span>
+                                            <span class="duration">00:00:00.754</span>
                                         
                                     
 
@@ -1062,8 +1014,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
+                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
                                         </div>
                                     
                                 
@@ -1072,19 +1024,295 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        I can type all personal data in client area
+                                        the url will contains the inventory subdirectory
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.046</span>
+                                            <span class="duration">00:00:00.255</span>
                                         
                                     
 
                                 </div>
 
                                 
+                                    
+                                        <pre class="info">
+// With Callbacks
+Then (/^the url will contains the inventory subdirectory$/, (callback) => {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+});
+
+// With Promises
+Then (/^the url will contains the inventory subdirectory$/, () => {
+    // Write code here that turns the phrase above into concrete actions
+    return Promise.resolve('pending');
+});
+                                        </pre>
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Blocked Login</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span class="step not-defined-background" data-toggle="tooltip" title="Scenario has nop step implementation.">1</span>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:00.962</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        A web browser is at the saucelabs login page
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.271</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">When </span>
+
+                                    
+                                        A user enters the username "locked_out_user", the password "secret_sauce", and clicks on the login button
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.691</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step has no implementation.">
+                                            <i class="fa fa-question-circle fa-2x not-defined-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        The error message "Epic sadface: Sorry, this user has been locked out." is displayed
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">0s</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+                                        <pre class="info">
+// With Callbacks
+Then (/^The error message "([^"]*)" is displayed$/, (arg1, callback) => {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+});
+
+// With Promises
+Then (/^The error message "([^"]*)" is displayed$/, (arg1, ) => {
+    // Write code here that turns the phrase above into concrete actions
+    return Promise.resolve('pending');
+});
+                                        </pre>
                                     
 
                                     
@@ -1171,12 +1399,12 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            1,
                             0,
                             0,
                             0,
                             0,
-                            0
+                            0,
+                            2
                         ],
                         backgroundColor: getChartColors()
                     }]
