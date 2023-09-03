@@ -2,9 +2,9 @@
   {
     "description": "    Como analista de teste quero acessar a pagina do publicazo e realizar uma pesquisa de Teste.",
     "keyword": "Feature",
-    "name": "002_Minha Funcionalidade",
+    "name": "Funcionalidad2",
     "line": 2,
-    "id": "002_minha-funcionalidade",
+    "id": "funcionalidad2",
     "tags": [
       {
         "name": "@RegressionTest",
@@ -14,10 +14,10 @@
     "uri": "Test_Case_02.feature",
     "elements": [
       {
-        "id": "002_minha-funcionalidade;002_check_pesquisa",
+        "id": "funcionalidad2;002_check",
         "keyword": "Scenario",
         "line": 16,
-        "name": "002_Check_Pesquisa",
+        "name": "002_Check",
         "tags": [
           {
             "name": "@RegressionTest",
@@ -37,7 +37,7 @@
             "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 5350000000
+              "duration": 5371000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "item2 \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1300000000
+              "duration": 1361000000
             }
           },
           {
@@ -57,16 +57,16 @@
             "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 22000000
             }
           }
         ]
       },
       {
-        "id": "002_minha-funcionalidade;002_check_pesquisa",
+        "id": "funcionalidad2;002_check",
         "keyword": "Scenario",
         "line": 17,
-        "name": "002_Check_Pesquisa",
+        "name": "002_Check",
         "tags": [
           {
             "name": "@RegressionTest",
@@ -86,7 +86,7 @@
             "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 1335000000
+              "duration": 971000000
             }
           },
           {
@@ -96,56 +96,7 @@
             "name": "item2 \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1122000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "verifica item2 existe",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "002_minha-funcionalidade;002_check_pesquisa",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "002_Check_Pesquisa",
-        "tags": [
-          {
-            "name": "@RegressionTest",
-            "line": 1
-          },
-          {
-            "name": "@Test",
-            "line": 7
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "un aceso",
-            "result": {
-              "status": "passed",
-              "duration": 938000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "item2 \"Cabeleleira\"",
-            "result": {
-              "status": "passed",
-              "duration": 1409000000
+              "duration": 1075000000
             }
           },
           {
@@ -156,6 +107,55 @@
             "result": {
               "status": "passed",
               "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "funcionalidad2;002_check",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "002_Check",
+        "tags": [
+          {
+            "name": "@RegressionTest",
+            "line": 1
+          },
+          {
+            "name": "@Test",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "un aceso",
+            "result": {
+              "status": "passed",
+              "duration": 959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "item2 \"Cabeleleira\"",
+            "result": {
+              "status": "passed",
+              "duration": 1148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "verifica item2 existe",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
             }
           }
         ]

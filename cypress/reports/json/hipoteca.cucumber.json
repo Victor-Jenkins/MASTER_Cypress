@@ -22,7 +22,7 @@
             "name": "I am on the Clikalia website",
             "result": {
               "status": "passed",
-              "duration": 4001000000
+              "duration": 1507000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "As user clicks on Hipoteca",
             "result": {
               "status": "passed",
-              "duration": 2970000000
+              "duration": 3231000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I select calcula tu hipoteca",
             "result": {
               "status": "passed",
-              "duration": 9462000000
+              "duration": 3463000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I proceed to get information",
             "result": {
               "status": "passed",
-              "duration": 3469000000
+              "duration": 2830000000
             }
           }
         ]

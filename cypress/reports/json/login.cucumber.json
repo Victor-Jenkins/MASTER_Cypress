@@ -23,7 +23,7 @@
             "name": "A web browser is at the saucelabs login page",
             "result": {
               "status": "passed",
-              "duration": 768000000
+              "duration": 783000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "A user enters the username \"standard_user\", the password \"secret_sauce\", and clicks on the login button",
             "result": {
               "status": "passed",
-              "duration": 1051000000
+              "duration": 801000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "the url will contains the inventory subdirectory",
             "result": {
               "status": "undefined",
-              "duration": 402000000
+              "duration": 324000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "A web browser is at the saucelabs login page",
             "result": {
               "status": "passed",
-              "duration": 376000000
+              "duration": 364000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "A user enters the username \"locked_out_user\", the password \"secret_sauce\", and clicks on the login button",
             "result": {
               "status": "passed",
-              "duration": 788000000
+              "duration": 791000000
             }
           },
           {

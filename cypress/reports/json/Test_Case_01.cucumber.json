@@ -36,7 +36,7 @@
             "name": "acess",
             "result": {
               "status": "passed",
-              "duration": 5430000000
+              "duration": 6022000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "item \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1198000000
+              "duration": 1327000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "verifica",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           }
         ]
@@ -85,7 +85,7 @@
             "name": "acess",
             "result": {
               "status": "passed",
-              "duration": 918000000
+              "duration": 888000000
             }
           },
           {
@@ -95,7 +95,7 @@
             "name": "item \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1192000000
+              "duration": 1052000000
             }
           },
           {
@@ -105,7 +105,7 @@
             "name": "verifica",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           }
         ]
@@ -134,7 +134,7 @@
             "name": "acess",
             "result": {
               "status": "passed",
-              "duration": 937000000
+              "duration": 857000000
             }
           },
           {
@@ -144,7 +144,7 @@
             "name": "item \"Cabeleleira\"",
             "result": {
               "status": "passed",
-              "duration": 1113000000
+              "duration": 1017000000
             }
           },
           {
@@ -154,7 +154,7 @@
             "name": "verifica",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           }
         ]
