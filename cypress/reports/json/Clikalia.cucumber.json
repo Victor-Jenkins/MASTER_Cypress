@@ -22,7 +22,7 @@
             "name": "A web browser is at the Clikalia page",
             "result": {
               "status": "passed",
-              "duration": 5009000000
+              "duration": 7062000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user accept cookies",
             "result": {
               "status": "passed",
-              "duration": 209000000
+              "duration": 275000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "the url will contains the subdirectory",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 16000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Click on Buy Flat",
             "result": {
               "status": "passed",
-              "duration": 3440000000
+              "duration": 3773000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I want buy on Madrid",
             "result": {
               "status": "passed",
-              "duration": 1102000000
+              "duration": 1311000000
             }
           },
           {
@@ -72,8 +72,8 @@
             "name": "Start a reservation",
             "result": {
               "status": "failed",
-              "duration": 4156000000,
-              "error_message": "AssertionError: 2023-09-03T20:12:06.181Z\nTimed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\nAssertionError: Timed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\n    at Object.reservation (cypress/support/steps/Clikalia.steps.js:13:26)\n    at Context.eval (cypress/support/steps/Clikalia.steps.js:44:11)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 4978000000,
+              "error_message": "AssertionError: 2023-09-03T20:38:46.215Z\nTimed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\nAssertionError: Timed out retrying after 3000ms: Expected to find element: `#book-appointment-2649`, but never found it.\n    at Object.reservation (cypress/support/steps/Clikalia.steps.js:13:26)\n    at Context.eval (cypress/support/steps/Clikalia.steps.js:44:11)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             },
             "embeddings": [
               {

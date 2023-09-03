@@ -4,7 +4,7 @@ import {
   Then,
 } from "cypress-cucumber-preprocessor/steps";
 
-const elements = {
+const elements1 = {
 
   usernameInput: () => cy.get("#user-name"),
   passwordInput: () => cy.get("#password"),
@@ -19,23 +19,18 @@ Given("A web browser is at the saucelabs login page", () => {
 });
 
 When("A user enters the username {string}, the password {string}, and clicks on the login button", (username,password) => {
-  elements.usernameInput().type(username);
-  elements.passwordInput().type(password);
-  elements.loginBtn().click();
+  elements1.usernameInput().type(username);
+  elements1.passwordInput().type(password);
+  elements1.loginBtn().click();
 });
 
 When("A user provides incorrect credentials, and clicks on the login button", (table) => {
   table.hashes().forEach((row) => {
     cy.log(row.username);
     cy.log(row.password);
-    elements.usernameInput().type(username);
-  elements.passwordInput().type(password);
-  elements.loginBtn().click();
+    elements1.usernameInput().type(username);
+  elements1.passwordInput().type(password);
+  elements1.loginBtn().click();
 });
 })
-Then("the url will contains the inventory subdirectory", () => {
-  cy.url().should("contains", "/inventory.html");
-});
-Then("The error message {string} is displayed", (errorMessage) => {
-  elements.errorMessage().should("have.text", errorMessage);
-});
+

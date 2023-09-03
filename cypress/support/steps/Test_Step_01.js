@@ -4,7 +4,7 @@ import Utilidades from '../pageobjects/Intro'
 const Utils = new Utilidades();
 
 
-Given('um acesso no site publicazo', () => {
+Given('acess', () => {
 
     cy.viewport(1920,1080) // define tamanho da tela para teste
     cy.log('Screen resized 1920x1080 *') // mensagem de definição da tela
@@ -15,7 +15,7 @@ Given('um acesso no site publicazo', () => {
 
 });
 
-When('insiro o item {string}', (item) => {
+When('item {string}', (item) => {
 
     Utils.seleciona_item(item);
     cy.log('Item pesquisado ');
@@ -24,7 +24,7 @@ When('insiro o item {string}', (item) => {
 });
 
 
-Then('verifica se item existe', () => {
+Then('verifica', () => {
 
 
     //==============================================

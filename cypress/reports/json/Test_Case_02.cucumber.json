@@ -34,30 +34,30 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "um acesso no site publicazo2",
+            "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 5721000000
+              "duration": 5350000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "insiro o item2 \"Teste\"",
+            "name": "item2 \"Teste\"",
             "result": {
               "status": "passed",
-              "duration": 1142000000
+              "duration": 1300000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "verifica se item2 existe",
+            "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           }
         ]
@@ -83,30 +83,30 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "um acesso no site publicazo2",
+            "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 951000000
+              "duration": 1335000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "insiro o item2 \"Enfermeira\"",
+            "name": "item2 \"Enfermeira\"",
             "result": {
               "status": "passed",
-              "duration": 1056000000
+              "duration": 1122000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "verifica se item2 existe",
+            "name": "verifica item2 existe",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 6000000
             }
           }
         ]
@@ -132,27 +132,27 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "um acesso no site publicazo2",
+            "name": "un aceso",
             "result": {
               "status": "passed",
-              "duration": 912000000
+              "duration": 938000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "insiro o item2 \"Cabeleleira\"",
+            "name": "item2 \"Cabeleleira\"",
             "result": {
               "status": "passed",
-              "duration": 1098000000
+              "duration": 1409000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "verifica se item2 existe",
+            "name": "verifica item2 existe",
             "result": {
               "status": "passed",
               "duration": 4000000

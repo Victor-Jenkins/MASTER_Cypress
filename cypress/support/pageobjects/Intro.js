@@ -11,7 +11,7 @@ class Utilidades {
         cy.visit(Cypress.env('QA').url)
 
           
-        return cy.log('Pagina acessada com sucesso!!!')
+        return cy.log('Pagina accedida con exito!!!')
     }
    
 //====================================================================================================

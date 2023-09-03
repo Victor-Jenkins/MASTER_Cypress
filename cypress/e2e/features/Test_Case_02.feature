@@ -6,9 +6,9 @@ Feature:002_Minha Funcionalidade
 	#Teste de pesquisa
 	@Test
 	Scenario Outline: 002_Check_Pesquisa
-		Given um acesso no site publicazo2 
-		When insiro o item2 "<item2>"
-		Then verifica se item2 existe
+		Given un aceso
+		When  item2 "<item2>"
+		Then verifica item2 existe
 		
 	Examples:
 

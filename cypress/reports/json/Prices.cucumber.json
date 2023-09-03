@@ -22,7 +22,7 @@
             "name": "I am on the Kuorum website",
             "result": {
               "status": "passed",
-              "duration": 1228000000
+              "duration": 1238000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "As user clicks on different dropdowns",
             "result": {
               "status": "passed",
-              "duration": 851000000
+              "duration": 854000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I type personal data like a client",
             "result": {
               "status": "passed",
-              "duration": 2193000000
+              "duration": 2136000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I can type all personal data in client area",
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 42000000
             }
           }
         ]
