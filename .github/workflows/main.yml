@@ -1,9 +1,8 @@
 name: Cypress Test and Report
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0 * * 0"  # Ejecuta cada domingo a medianoche (hora UTC)
 
 jobs:
   cypress-run:
@@ -44,3 +43,4 @@ jobs:
         with:
           name: cucumber-html-report
           path: ./cypress/reports/chrome
+
