@@ -1,4 +1,4 @@
-name: Cypress Test and Report
+name: Weekly Cypress Test and Report
 
 on:
   schedule:
@@ -43,4 +43,5 @@ jobs:
         with:
           name: cucumber-html-report
           path: ./cypress/reports/chrome
+
 
