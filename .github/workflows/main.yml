@@ -3,6 +3,10 @@ name: Weekly Cypress Test and Report
 on:
   schedule:
     - cron: "0 0 * * 0"  # Ejecuta cada domingo a medianoche (hora UTC)
+  workflow_run:
+    workflows: ["Cypress Test and Report"]
+    types:
+      - completed
 
 jobs:
   cypress-run:
@@ -43,5 +47,4 @@ jobs:
         with:
           name: cucumber-html-report
           path: ./cypress/reports/chrome
-
 
