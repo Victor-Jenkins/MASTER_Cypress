@@ -7,3 +7,5 @@
 - npx cypress run
 - node ./cucumber-html-report.js
 - open html with FirefoxPrueba Quickdraw
+Prueba Quickdraw
+Prueba Quickdraw
