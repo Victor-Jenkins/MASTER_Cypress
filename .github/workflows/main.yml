@@ -16,32 +16,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14  # Ajusta según necesidad
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Install Dependencies (sin opcionales)
-        run: npm install --no-optional
-
-      - name: Install Xvfb
-        run: sudo apt-get update && sudo apt-get install -y xvfb
-
-      - name: Run Cypress headed with Xvfb
-        env:
-          DISPLAY: :99
-        run: |
-          Xvfb :99 -screen 0 1920x1080x24 &
-          sleep 3
-          npx cypress run --headed || true
+      - name: Cypress Run
+        id: cypress
+        run: npx cypress run || true  # Ejecuta Cypress y continúa incluso si falla
 
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
 
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Puedes ajustar según lo que necesites
+
+      # Desplegar el informe a GitHub Pages
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Usa el token automático
           publish_dir: ./cypress/reports/chrome
 
       - name: Create Cucumber HTML Report Artifact
@@ -49,5 +43,3 @@ jobs:
         with:
           name: cucumber-html-report
           path: ./cypress/reports/chrome
-
-
