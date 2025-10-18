@@ -22,7 +22,7 @@
             "name": "A web browser is at the Clikalia page",
             "result": {
               "status": "passed",
-              "duration": 1918000000
+              "duration": 5026000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user rejects cookies",
             "result": {
               "status": "passed",
-              "duration": 3445000000
+              "duration": 470000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "User navigates to Buy Flat",
             "result": {
               "status": "passed",
-              "duration": 4144000000
+              "duration": 4239000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "DEBUG - this step is loaded",
             "result": {
               "status": "passed",
-              "duration": 1062000000
+              "duration": 1070000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "User selects Madrid as location",
             "result": {
               "status": "passed",
-              "duration": 1178000000
+              "duration": 1757000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "User starts a reservation",
             "result": {
               "status": "passed",
-              "duration": 11237000000
+              "duration": 13262000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "User enters name and surname",
             "result": {
               "status": "passed",
-              "duration": 7410000000
+              "duration": 4375000000
             }
           }
         ]

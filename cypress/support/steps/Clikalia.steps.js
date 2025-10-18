@@ -36,6 +36,7 @@ const elements = {
 
 Given("A web browser is at the Clikalia page", () => {
   cy.visit("https://clikalia.es/vender");
+  cy.wait(3000);
 });
 
 When("A user rejects cookies", () => {
@@ -65,11 +66,12 @@ Then("User selects Madrid as location", () => {
 Then("User starts a reservation", () => {
   elements.reservationButton().should('be.visible').click();
 
+
 cy.get('[data-testid="radio-button-component"] input[type="radio"][value="VIRTUAL"]').check({ force: true });
 cy.get('span.flex.items-center.gap-1')
   .contains('Continuar')
   .click();
-cy.wait(4000);
+cy.wait(7000);
 
 });
 
