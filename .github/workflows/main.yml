@@ -4,40 +4,40 @@ on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write  # Necesario para poder hacer push a GitHub Pages
+
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Instala las dependencias de NPM
       - name: Install Dependencies
         run: npm install
 
-      # Ejecuta las pruebas Cypress y captura el código de salida
       - name: Cypress Run
         id: cypress
         run: npx cypress run || true  # Ejecuta Cypress y continúa incluso si falla
 
-      # Genera el informe de Cucumber HTML
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
 
-      # Configura el entorno para la acción peaceiris/actions-gh-pages
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14  # Puedes ajustar la versión de Node según tus requisitos
+          node-version: 14  # Puedes ajustar según lo que necesites
 
-      # Desplegar automáticamente la carpeta del informe Cucumber HTML en GitHub Pages
+      # Desplegar el informe a GitHub Pages
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.CUCUMBER }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Usa el token automático
           publish_dir: ./cypress/reports/chrome
 
-      # Crear un artifact con el informe Cucumber-HTML
       - name: Create Cucumber HTML Report Artifact
         uses: actions/upload-artifact@v4
         with:
