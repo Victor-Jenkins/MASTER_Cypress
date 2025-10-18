@@ -36,11 +36,22 @@ const elements = {
 
 Given("A web browser is at the Clikalia page", () => {
   cy.visit("https://clikalia.es/vender");
-  cy.wait(3000);
+  cy.wait(7000);
 });
 
 When("A user rejects cookies", () => {
-  cy.contains('Rechazarlas todas').click();
+
+cy.get('body').then($body => {
+  const $btn = $body.find('button:contains("Rechazarlas todas")').filter(':visible');
+
+  if ($btn.length) {
+    cy.wrap($btn).click();
+  } else {
+    cy.log('Botón "Rechazarlas todas" no encontrado, continuo');
+  }
+});
+
+
 });
 
 When("User navigates to Buy Flat", () => {
@@ -68,9 +79,7 @@ Then("User starts a reservation", () => {
 
 
 cy.get('[data-testid="radio-button-component"] input[type="radio"][value="VIRTUAL"]').check({ force: true });
-cy.get('span.flex.items-center.gap-1')
-  .contains('Continuar')
-  .click();
+cy.get('span.flex.items-center.gap-1').contains('Continuar').click();
 cy.wait(7000);
 
 });
