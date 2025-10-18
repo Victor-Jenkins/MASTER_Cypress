@@ -22,7 +22,7 @@
             "name": "I am on the Kuorum website",
             "result": {
               "status": "passed",
-              "duration": 1204000000
+              "duration": 2519000000
             }
           },
           {
@@ -31,9 +31,15 @@
             "line": 6,
             "name": "As user clicks on different dropdowns",
             "result": {
-              "status": "passed",
-              "duration": 865000000
-            }
+              "status": "failed",
+              "duration": 3224000000,
+              "error_message": "AssertionError: 2025-10-16T22:27:01.492Z\nTimed out retrying after 3000ms: Expected to find content: 'Como preciamos en Kuorum' within the selector: 'h2' but never did.\nAssertionError: Timed out retrying after 3000ms: Expected to find content: 'Como preciamos en Kuorum' within the selector: 'h2' but never did.\n    at Object.burger (cypress/support/steps/Prices.steps.js:28:19)\n    at Context.eval (cypress/support/steps/Prices.steps.js:40:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -41,8 +47,7 @@
             "line": 7,
             "name": "I type personal data like a client",
             "result": {
-              "status": "passed",
-              "duration": 2220000000
+              "status": "skipped"
             }
           },
           {
@@ -51,8 +56,7 @@
             "line": 8,
             "name": "I can type all personal data in client area",
             "result": {
-              "status": "passed",
-              "duration": 31000000
+              "status": "skipped"
             }
           }
         ]

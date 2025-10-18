@@ -31,7 +31,7 @@ const elements1 = {
 Given("A web browser is at the Kuorum page", () => {
   cy.visit("https://www.kuorum.org/");
 });
-When("A user accept cookies", () => {
+When("A user accept cookies on kuorum", () => {
   elements1.cookies().click();
   elements1.burger().click();
 });
