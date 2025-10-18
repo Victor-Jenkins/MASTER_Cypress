@@ -39,7 +39,7 @@ jobs:
 
       # Crear un artifact con el informe Cucumber-HTML
       - name: Create Cucumber HTML Report Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-html-report
           path: ./cypress/reports/chrome
