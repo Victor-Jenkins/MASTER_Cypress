@@ -55,7 +55,7 @@ cy.get('body').then($body => {
 });
 
 When("User navigates to Buy Flat", () => {
- cy.contains('Comprar').click();
+ cy.contains('p', 'Comprar').eq(0).click();
  cy.get('input[type="text"]').first().type('Madrid{enter}');
 cy.get("body > main > div > header > div.flex.p-6.md\\:p-8.max-w-\\[600px\\].flex-col.w-full.items-start.mt-auto.mr-auto.sm\\:items-center.text-center.sm\\:mx-auto.sm\\:max-w-\\[736px\\].md\\:mt-0.bg-white.z-\\[1\\] > div.relative.w-full > div:nth-child(2) > div > div > button")
   .click();
@@ -85,7 +85,7 @@ cy.wait(7000);
 });
 
 Then("User enters name and surname", () => {
-  elements.inputDate().should('be.visible').click();
+ elements.inputDate().should('be.visible').click();
 elements.hourButton().should('be.visible').click();
 cy.get('[data-testid="button-component"]').contains('Continuar').click();
 cy.get('input[placeholder="Nombre"]').type('Victor');
