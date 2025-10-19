@@ -22,7 +22,7 @@
             "name": "A web browser is at the Kuorum page",
             "result": {
               "status": "passed",
-              "duration": 3022000000
+              "duration": 3797000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user accept cookies on kuorum",
             "result": {
               "status": "passed",
-              "duration": 1328000000
+              "duration": 799000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "the url will contains the subdirectory",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 206000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Click on List",
             "result": {
               "status": "passed",
-              "duration": 2241000000
+              "duration": 3284000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I want explore navigation",
             "result": {
               "status": "passed",
-              "duration": 624000000
+              "duration": 222000000
             }
           },
           {
@@ -71,15 +71,9 @@
             "line": 10,
             "name": "Start a reservation",
             "result": {
-              "status": "failed",
-              "duration": 3618000000,
-              "error_message": "AssertionError: 2025-10-18T21:31:22.986Z\nTimed out retrying after 3000ms: Expected to find content: 'Tecnología que se adapta ' but never did.\nAssertionError: Timed out retrying after 3000ms: Expected to find content: 'Tecnología que se adapta ' but never did.\n    at Object.x (cypress/support/steps/Kuorum.steps.js:13:14)\n    at Context.eval (cypress/support/steps/Kuorum.steps.js:51:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            },
-            "embeddings": [
-              {
-                "mime_type": "image/png"
-              }
-            ]
+              "status": "passed",
+              "duration": 16000000
+            }
           },
           {
             "arguments": [],
@@ -87,7 +81,8 @@
             "line": 11,
             "name": "A user enters the personal data with an incorrect email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2250000000
             }
           }
         ]

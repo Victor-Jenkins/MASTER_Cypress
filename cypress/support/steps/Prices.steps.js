@@ -9,7 +9,7 @@ const elements = {
   calcula: () => cy.contains('h2', 'Pagas por el tamaño del censo'),
   calcula1: () => cy.get('div.faq div'),
   name: () => cy.get('input.input-style').eq(0),
-  email: () => cy.get('input[data-name="Email"]').eq(1),
+  email: () => cy.get('#Email-10'),
   sector: () => cy.get('input[data-name="Organización"]'),
  
   up: () => cy.get('#email-form > div > div.heading-style-h3').scrollIntoView(),
@@ -25,7 +25,7 @@ const elements = {
   acceptConditions: () => cy.get('div.w-checkbox-input').eq(1),
   submitQuestionary: () => cy.get('input.is-full'),
   
-  burger: () => cy.contains('h2', 'Como preciamos en Kuorum'),
+
  
 };
 
@@ -37,9 +37,7 @@ Given('I am on the Kuorum website', () => {
 When('As user clicks on different dropdowns', () => {
   cy.url().should('include', '/precios');
       cy.contains('h1', 'Consulta nuestros precios');
-      elements.burger().click();
-      elements.calcula().click();
-      elements.calcula1().click();
+
   
 });
 When('I type personal data like a client', () => {

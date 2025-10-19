@@ -3,16 +3,23 @@ import {
   When,
   Then,
 } from "cypress-cucumber-preprocessor/steps";
+beforeEach(() => {
+  cy.viewport(1280, 800);
+});
 
 const elements = {
 
-  calcula: () => cy.get('#cover-cta-Hipoteca'),
-    calcula1: () => cy.get('#calculateMortgageCTA'),
-    price: () => cy.get('#mortgage-calculator-property-price-inputPrice-propertyPriceInput'),
-    burger: () => cy.get('[data-testid="burgerMenuComponent-drawer-open-btn"]'),
-    term: () => cy.get('#mortgage-calculator-contribution-price-inputPrice-propertyPriceInput'),
+  calcula: () => cy.contains('Calcular hipoteca'),
+    calcula1: () => cy.get('button[data-testid="button-component"]')
+                      .contains('Calcular mi cuota')
+,
+    price: () => cy.get('input[name="propertyPrice"]'),
+
+    burger: () => cy.contains('p.typography-component', 'Más servicios').should('contain', 'Más servicios'),
+    term: () => cy.get('input[name="saving"]'),
+
     propose: () => cy.get('#mortgage-calculator-result-button'),
-    interest: () => cy.get('#mortgage-calculator-interest-rate-variable-control'),
+    interest: () => document.querySelector("#calculator > form > div > div > div.form-colums__column-right.flex.flex-col.gap-10.md\\:pl-10 > div:nth-child(2) > div > div > button:nth-child(3)"),
     new: () => cy.get('#__next > div > div.sc-2bd4f6bf-0.hjDHjA > div.sc-2bd4f6bf-7.hSzQuL > div.sc-2bd4f6bf-8.jNjzNC > div.sc-7edbacff-0.glSUeU > div:nth-child(2) > div > div'),
     second: () => cy.get('#__next > div > div.sc-2bd4f6bf-0.hjDHjA > div.sc-2bd4f6bf-7.hSzQuL > div.sc-2bd4f6bf-8.jNjzNC > div.sc-7edbacff-0.glSUeU > div:nth-child(2) > ul > li.sc-elYLMi.bMpchm'),
     modalUse: () => cy.get('#modalComponent > div > div.sc-475b5863-0.hMnjkW > form > div > div:nth-child(1)'),
@@ -30,30 +37,33 @@ const elements = {
 
 Given('I am on the Clikalia website', () => {
   cy.visit('https://clikalia.es/vender');
+   cy.wait(7000);
+   cy.get('#onetrust-reject-all-handler, button:contains("Rechazarlas todas")'),
+
+    elements.burger().click();
 });
 When("As user clicks on Hipoteca", () => {
-  elements.burger().click();
-      cy.get('#burger-menu-hipotecas').click();
+
+      cy.contains('Calcula tu hipoteca').click(),
+
+
       cy.url().should('include', '/hipotecas');
-      cy.get('#homeMortgage-coverDesktop > section').should('contain.text', 'Conseguimos tu mejor hipoteca');
-      elements.calcula().click();
+      elements.calcula().click()
 });
-When('I select calcula tu hipoteca', () => {
-  elements.calcula1().click();
-  elements.price().click();
-  elements.price().clear();
-  elements.price().type("300000");
 
-  elements.term().click();
-  elements.term().clear();
-  elements.term().type("100000");
+Then('I select calcula tu hipoteca', () => {
+elements.calcula1().should('be.visible').click();
 
-  elements.interest().click();
-  elements.new().click();
-  elements.second().click();
-  
+elements.price().should('be.visible').click().clear().type("300000");
 
-  elements.propose().click();
+elements.term().should('be.visible').click().clear().type("100000");
+
+elements.interest().should('be.visible').click();
+elements.new().should('be.visible').click();
+elements.second().should('be.visible').click();
+
+elements.propose().should('be.visible').click();
+
 });
 Then('I proceed to get information', () => {
   elements.modalUse().click();

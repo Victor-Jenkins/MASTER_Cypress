@@ -4,6 +4,6 @@ Feature: Contract Mortgage Clikalia
     
     Given I am on the Clikalia website
     When As user clicks on Hipoteca
-    And I select calcula tu hipoteca
+    Then I select calcula tu hipoteca
     Then I proceed to get information
     

@@ -35,8 +35,9 @@
             "line": 7,
             "name": "acess",
             "result": {
-              "status": "passed",
-              "duration": 5788000000
+              "status": "failed",
+              "duration": 3041000000,
+              "error_message": "AssertionError: 2025-10-19T16:05:45.740Z\nTimed out retrying after 3000ms: `cy.readFile(\"/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/Test_Case_01.feature/Funcionalidad -- 001_Check_Find (example #1) (failed).png\")` failed because the file does not exist at the following path:\n\n`/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/Test_Case_01.feature/Funcionalidad -- 001_Check_Find (example #1) (failed).png`\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\nAssertionError: Timed out retrying after 3000ms: `cy.readFile(\"/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/Test_Case_01.feature/Funcionalidad -- 001_Check_Find (example #1) (failed).png\")` failed because the file does not exist at the following path:\n\n`/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/Test_Case_01.feature/Funcionalidad -- 001_Check_Find (example #1) (failed).png`\n    at Context.eval (cypress/support/e2e.js:14:15)"
             }
           },
           {
@@ -45,8 +46,7 @@
             "line": 8,
             "name": "item \"Teste\"",
             "result": {
-              "status": "passed",
-              "duration": 1253000000
+              "status": "skipped"
             }
           },
           {
@@ -55,106 +55,7 @@
             "line": 9,
             "name": "verifica",
             "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "funcionalidad;001_check_find",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "001_Check_Find",
-        "tags": [
-          {
-            "name": "@RegressionTest",
-            "line": 1
-          },
-          {
-            "name": "@Test",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "acess",
-            "result": {
-              "status": "passed",
-              "duration": 913000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "item \"Enfermeira\"",
-            "result": {
-              "status": "passed",
-              "duration": 1095000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "verifica",
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "funcionalidad;001_check_find",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "001_Check_Find",
-        "tags": [
-          {
-            "name": "@RegressionTest",
-            "line": 1
-          },
-          {
-            "name": "@Test",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "acess",
-            "result": {
-              "status": "passed",
-              "duration": 840000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "item \"Cabeleleira\"",
-            "result": {
-              "status": "passed",
-              "duration": 1090000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "verifica",
-            "result": {
-              "status": "passed",
-              "duration": 2000000
+              "status": "skipped"
             }
           }
         ]

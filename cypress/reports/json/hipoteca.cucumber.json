@@ -22,7 +22,7 @@
             "name": "I am on the Clikalia website",
             "result": {
               "status": "passed",
-              "duration": 1564000000
+              "duration": 9943000000
             }
           },
           {
@@ -32,17 +32,18 @@
             "name": "As user clicks on Hipoteca",
             "result": {
               "status": "passed",
-              "duration": 3159000000
+              "duration": 1658000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 7,
             "name": "I select calcula tu hipoteca",
             "result": {
-              "status": "passed",
-              "duration": 4642000000
+              "status": "failed",
+              "duration": 3764000000,
+              "error_message": "AssertionError: 2025-10-19T17:26:42.127Z\nTimed out retrying after 3000ms: `cy.readFile(\"/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/hipoteca.feature/Contract Mortgage Clikalia -- Select Mortgage, price, years and interest, fill in personal data (failed).png\")` failed because the file does not exist at the following path:\n\n`/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/hipoteca.feature/Contract Mortgage Clikalia -- Select Mortgage, price, years and interest, fill in personal data (failed).png`\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\nAssertionError: Timed out retrying after 3000ms: `cy.readFile(\"/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/hipoteca.feature/Contract Mortgage Clikalia -- Select Mortgage, price, years and interest, fill in personal data (failed).png\")` failed because the file does not exist at the following path:\n\n`/home/victor/IdeaProjects/untitled/MASTER_Cypress/cypress/screenshots/hipoteca.feature/Contract Mortgage Clikalia -- Select Mortgage, price, years and interest, fill in personal data (failed).png`\n    at Context.eval (cypress/support/e2e.js:14:15)"
             }
           },
           {
@@ -51,8 +52,7 @@
             "line": 8,
             "name": "I proceed to get information",
             "result": {
-              "status": "passed",
-              "duration": 3150000000
+              "status": "skipped"
             }
           }
         ]

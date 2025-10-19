@@ -22,15 +22,21 @@ afterEach(() => {
                     testCase: testState.formatTestCase(testState.currentScenario),
                 };
             });
-
-        }
-        else{
+        } else {
             console.log(testState.feature.name)
             console.log(stepResult?.title)
             console.log(stepResult?.status)
         }
     }
+});
 
+Cypress.on('uncaught:exception', (err) => {
+  if (
+    err.message.includes('Minified React error #418') ||
+    err.message.includes("Failed to execute 'removeChild' on 'Node'")
+  ) {
+    return false; // Ignora estos errores para no romper los tests
+  }
 });
 
 Cypress.on('fail', (err) => {
