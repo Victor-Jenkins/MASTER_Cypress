@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # Necesario para poder hacer push a GitHub Pages
+  contents: write
 
 jobs:
   cypress-run:
@@ -16,26 +16,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
       - name: Install Dependencies
         run: npm install
 
-      - name: Cypress Run
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Cypress Run (headed Chrome)
         id: cypress
-        run: npx cypress run || true  # Ejecuta Cypress y continúa incluso si falla
+        run: npx cypress run --browser chrome --headed || true
 
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
 
-      - name: Set up Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14  # Puedes ajustar según lo que necesites
-
-      # Desplegar el informe a GitHub Pages
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Usa el token automático
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./cypress/reports/chrome
 
       - name: Create Cucumber HTML Report Artifact
