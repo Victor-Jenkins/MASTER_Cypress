@@ -626,15 +626,17 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>Visit and search flat on page https://clikalia.es/vender and search flat on Madrid</small>
+                <small>Login page</small>
             </h1>
             
                 <p>
+                    <strong>Description: </strong>     Feature Login page will work depending on the user credentials. </p>
+                
                <p><strong>File name:</strong>
-                    Clikalia.feature
+                    login.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    Clikalia.feature</p>
+                    login.feature</p>
             
         </div>
 
@@ -672,7 +674,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">1</div>
+                <div class="total">2</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -683,7 +685,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -692,7 +694,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     
                     
                     </tr>
@@ -704,7 +706,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:00:24.118</td></tr>
+                <tr><td>00:00:01.827</td></tr>
             </tr>
         
     </table>
@@ -828,7 +830,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Success search</small></h2>
+                <h2>Scenario: <small>Success Login</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -840,20 +842,12 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">4</span>
-                        </li>
+
                     
 
                     
                         <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -862,7 +856,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:00:24.118</span>
+                            <span style=padding-right:5em>00:00:01.027</span>
                         </li>
                     
                 </ul>
@@ -888,13 +882,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        A web browser is at the Clikalia page
+                                        A web browser is at the saucelabs login page
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:09.754</span>
+                                            <span class="duration">00:00:00.340</span>
                                         
                                     
 
@@ -952,160 +946,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        A user rejects cookies
+                                        A user enters the username "standard_user", the password "secret_sauce", and clicks on the login button
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.013</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        User navigates to Buy Flat
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:14.351</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-                                        <a href="#error0-2-error" data-toggle="collapse">+ Show Error</a>
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-                                        <a href="#info0-2-image" data-toggle="collapse">+ Screenshot</a>
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-                                <div id="error0-2-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>AssertionError: 2025-10-19T12:11:19.112Z
-Timed out retrying after 10000ms: Expected to find content: 'Encontrar casa' but never did.
-AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Encontrar casa' but never did.
-    at Context.eval (cypress/support/steps/Clikalia.steps.js:76:51)
-    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
-    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</pre>
-                                </div>
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                                <div id="info0-2-image" class="scenario-step-collapse collapse">
-                                    
-                                        <img class="screenshot" src="data:image/png;base64,undefined"/>
-                                    
-                                </div>
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        DEBUG - this step is loaded
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.664</span>
                                         
                                     
 
@@ -1153,8 +1000,8 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1163,13 +1010,129 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        User selects Madrid as location
+                                        the url will contains the inventory subdirectory
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.023</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height: auto;">
+            <div class="x_title">
+
+                <div class="tags">
+                    
+                        
+                        
+                    
+                </div>
+
+                <h2>Scenario: <small>Blocked Login</small></h2>
+
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                    </li>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:00.800</span>
+                        </li>
+                    
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content" style="display: none;">
+                <div class="scenario-step-container"></div>
+                    
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Given </span>
+
+                                    
+                                        A web browser is at the saucelabs login page
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.161</span>
                                         
                                     
 
@@ -1217,23 +1180,23 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">When </span>
 
                                     
-                                        User starts a reservation
+                                        A user enters the username "locked_out_user", the password "secret_sauce", and clicks on the login button
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.635</span>
                                         
                                     
 
@@ -1281,8 +1244,8 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1291,13 +1254,13 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        User enters name and surname
+                                        The error message "Epic sadface: Sorry, this user has been locked out." is displayed
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">0s</span>
+                                            <span class="duration">00:00:00.004</span>
                                         
                                     
 
@@ -1390,8 +1353,8 @@ AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Enc
                     ],
                     datasets: [{
                         data: [
+                            2,
                             0,
-                            1,
                             0,
                             0,
                             0,
