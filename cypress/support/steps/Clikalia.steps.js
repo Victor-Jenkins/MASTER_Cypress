@@ -67,13 +67,19 @@ When("A user rejects cookies", () => {
 
 When("User navigates to Buy Flat", () => {
   cy.contains('p', 'Comprar').eq(0).should('be.visible').click();
-  cy.get('input[type="text"]').first().type('Madrid{enter}');
+  // Escribe en el input de búsqueda
+  cy.get('input[type="text"]').first()
+    .should('be.visible')
+    .clear()
+    .type('Madrid');
 
-  cy.get(
-    'body > main > div > header > div.flex.p-6.md\\:p-8.max-w-\\[600px\\].flex-col.w-full.items-start.mt-auto.mr-auto.sm\\:items-center.text-center.sm\\:mx-auto.sm\\:max-w-\\[736px\\].md\\:mt-0.bg-white.z-\\[1\\] > div.relative.w-full > div:nth-child(2) > div > div > button'
-  ).should('be.visible').click();
+  // Espera a que aparezca la sugerencia y haz clic
+  cy.contains('button', 'Madrid', { timeout: 10000 })
+    .should('be.visible')
+    .click();
 
-  cy.contains('Encontrar casa',{ timeout: 10000 }).should('be.visible').click();
+ cy.contains('Encontrar casa', { timeout: 10000 }).should('be.visible').click();
+
 });
 
 Then("DEBUG - this step is loaded", () => {
@@ -85,18 +91,10 @@ Then("User selects Madrid as location", () => {
   cy.contains('Piso en Paseo Reina Cristina').should('be.visible').click();
 });
 
-
 Then("User starts a reservation", () => {
  cy.contains('Agenda una visita', { timeout: 10000 })
    .should('be.visible')
    .click();
-
-
-
-
-
-
-
 
   cy.get('[data-testid="radio-button-component"] input[type="radio"][value="VIRTUAL"]')
     .should('exist')
@@ -104,8 +102,10 @@ Then("User starts a reservation", () => {
 
   cy.get('span.flex.items-center.gap-1')
     .contains('Continuar')
+    .scrollIntoView()
     .should('be.visible')
     .click();
+
 
   cy.wait(7000);
 });
