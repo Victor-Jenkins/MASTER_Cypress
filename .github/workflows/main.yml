@@ -19,9 +19,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Cypress Run
+      - name: Cypress Run (headed Chrome)
         id: cypress
-        run: npx cypress run || true  # Ejecuta Cypress y continúa incluso si falla
+        run: npx cypress run --browser chrome --headed || true  # Ejecuta Cypress en modo headed
 
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
@@ -31,11 +31,10 @@ jobs:
         with:
           node-version: 14  # Puedes ajustar según lo que necesites
 
-      # Desplegar el informe a GitHub Pages
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Usa el token automático
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./cypress/reports/chrome
 
       - name: Create Cucumber HTML Report Artifact
