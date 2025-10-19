@@ -1,4 +1,7 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+beforeEach(() => {
+  cy.viewport(1280, 800);
+});
 
 const elements = {
   // Botón de rechazar cookies
@@ -82,8 +85,18 @@ Then("User selects Madrid as location", () => {
   cy.contains('Piso en Paseo Reina Cristina').should('be.visible').click();
 });
 
+
 Then("User starts a reservation", () => {
-  elements.reservationButton().click();
+ cy.contains('Agenda una visita')
+   .scrollIntoView()
+   .should('be.visible')
+   .click();
+
+
+
+
+
+
 
   cy.get('[data-testid="radio-button-component"] input[type="radio"][value="VIRTUAL"]')
     .should('exist')
