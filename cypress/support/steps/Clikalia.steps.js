@@ -73,9 +73,7 @@ When("User navigates to Buy Flat", () => {
     'body > main > div > header > div.flex.p-6.md\\:p-8.max-w-\\[600px\\].flex-col.w-full.items-start.mt-auto.mr-auto.sm\\:items-center.text-center.sm\\:mx-auto.sm\\:max-w-\\[736px\\].md\\:mt-0.bg-white.z-\\[1\\] > div.relative.w-full > div:nth-child(2) > div > div > button'
   ).should('be.visible').click();
 
-  cy.contains('Encontrar casa').scrollIntoView()
-                                   .should('be.visible')
-                                   .click();
+  cy.contains('Encontrar casa').should('be.visible').click();
 });
 
 Then("DEBUG - this step is loaded", () => {
@@ -89,10 +87,10 @@ Then("User selects Madrid as location", () => {
 
 
 Then("User starts a reservation", () => {
- cy.contains('Agenda una visita')
-   .scrollIntoView()
+ cy.contains('Agenda una visita', { timeout: 10000 })
    .should('be.visible')
    .click();
+
 
 
 
