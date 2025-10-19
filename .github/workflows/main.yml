@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: write  # Necesario para poder hacer push a GitHub Pages
 
 jobs:
   cypress-run:
@@ -16,25 +16,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
       - name: Install Dependencies
         run: npm install
 
-      - name: Install Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-
       - name: Cypress Run (headed Chrome)
         id: cypress
-        run: npx cypress run --browser chrome --headed || true
+        run: npx cypress run --browser chrome --headed || true  # Ejecuta Cypress en modo headed
 
       - name: Generate Cucumber HTML Report
         run: node cucumber-html-report.js
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Puedes ajustar según lo que necesites
 
       - name: Deploy Cucumber Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
