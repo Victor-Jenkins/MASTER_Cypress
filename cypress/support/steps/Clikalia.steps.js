@@ -56,7 +56,7 @@ cy.get('body').then($body => {
 
 When("User navigates to Buy Flat", () => {
  cy.contains('Comprar').click();
- cy.get('input[placeholder="Introduce la provincia"]').type('Madrid{enter}');
+ cy.get('input[type="text"]').type('Madrid{enter}');
 cy.get("body > main > div > header > div.flex.p-6.md\\:p-8.max-w-\\[600px\\].flex-col.w-full.items-start.mt-auto.mr-auto.sm\\:items-center.text-center.sm\\:mx-auto.sm\\:max-w-\\[736px\\].md\\:mt-0.bg-white.z-\\[1\\] > div.relative.w-full > div:nth-child(2) > div > div > button")
   .click();
 cy.contains('Encontrar casa').click();
