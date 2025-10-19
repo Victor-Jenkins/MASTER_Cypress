@@ -22,7 +22,7 @@
             "name": "A web browser is at the Clikalia page",
             "result": {
               "status": "passed",
-              "duration": 8642000000
+              "duration": 9629000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user rejects cookies",
             "result": {
               "status": "passed",
-              "duration": 376000000
+              "duration": 438000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "User navigates to Buy Flat",
             "result": {
               "status": "passed",
-              "duration": 3727000000
+              "duration": 6779000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "DEBUG - this step is loaded",
             "result": {
               "status": "passed",
-              "duration": 1070000000
+              "duration": 1071000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "User selects Madrid as location",
             "result": {
               "status": "passed",
-              "duration": 2268000000
+              "duration": 3652000000
             }
           },
           {
@@ -71,9 +71,15 @@
             "line": 10,
             "name": "User starts a reservation",
             "result": {
-              "status": "passed",
-              "duration": 14400000000
-            }
+              "status": "failed",
+              "duration": 3199000000,
+              "error_message": "AssertionError: 2025-10-19T09:54:53.390Z\nTimed out retrying after 3000ms: Expected to find content: 'Agenda una visita' but never did.\nAssertionError: Timed out retrying after 3000ms: Expected to find content: 'Agenda una visita' but never did.\n    at Context.eval (cypress/support/steps/Clikalia.steps.js:78:31)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            },
+            "embeddings": [
+              {
+                "mime_type": "image/png"
+              }
+            ]
           },
           {
             "arguments": [],
@@ -81,8 +87,7 @@
             "line": 11,
             "name": "User enters name and surname",
             "result": {
-              "status": "passed",
-              "duration": 4877000000
+              "status": "skipped"
             }
           }
         ]
